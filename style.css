@@ -35,7 +35,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Menambahkan jarak antar widget */
+    gap: 20px; /* Memberikan jarak antar widget */
     margin-top: 20px;
 }
 
@@ -44,7 +44,7 @@ header {
     background-color: #111;
     padding: 20px;
     border-radius: 10px;
-    width: 48%; /* Membagi 2 bagian untuk layar besar */
+    width: 48%; /* Untuk desktop */
     box-shadow: 0px 0px 10px #00eaff;
 }
 
@@ -88,7 +88,7 @@ button:hover {
     border-radius: 10px;
 }
 
-/* 🔹 Responsif: Di layar HP, widget menjadi satu kolom */
+/* 🔹 Responsif: Di layar HP, widget menjadi satu kolom dengan jarak lebih besar */
 @media screen and (max-width: 768px) {
     .widgets {
         flex-direction: column;
@@ -96,15 +96,9 @@ button:hover {
     }
 
     .widget {
-        width: 90%; /* Agar lebih pas di layar kecil */
-    }
-}
-
-    header {
-        padding: 15px;
-    }
-
-    button {
-        width: 100%;
+        width: 90%; /* Lebih pas untuk layar kecil */
+        max-width: 400px; /* Membatasi agar tidak terlalu lebar */
+        margin-bottom: 25px; /* Tambahkan jarak antar widget */
+        padding: 25px; /* Sedikit lebih besar agar lebih lega */
     }
 }
