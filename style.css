@@ -30,6 +30,21 @@ header {
     font-weight: bold;
 }
 
+button{
+ background-color: #00eaff;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #007799;
+}
+
 /* 🔹 Styling Section Komentar */
 .komentar {
     background-color: rgba(0, 0, 0, 0.7);
