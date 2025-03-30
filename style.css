@@ -30,35 +30,32 @@ header {
     font-weight: bold;
 }
 
-/* 🔹 Pusatkan To-Do List */
-.widgets {
-    display: flex;
-    justify-content: center; /* Pusatkan secara horizontal */
-    margin-top: 20px;
-}
-
-/* 🔹 Widget To-Do List */
-.widget {
-    background-color: #111;
-    padding: 20px;
+/* 🔹 Styling Komentar */
+.komentar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
     border-radius: 10px;
-    width: 90%; /* Gunakan 90% dari lebar layar */
-    max-width: 600px; /* Batas maksimal */
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto; /* Tengah di layar */
+    text-align: center;
     box-shadow: 0px 0px 10px #00eaff;
-    text-align: center; /* Agar teks dan elemen lainnya sejajar */
 }
 
-/* 🔹 Responsif: Sesuaikan ukuran input dan tombol */
-#todo-input {
-    width: calc(100% - 80px); /* Menyesuaikan dengan tombol */
+/* 🔹 Input & Textarea */
+.komentar input, .komentar textarea {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     border: 1px solid #00eaff;
     border-radius: 5px;
+    background: #222;
+    color: #00eaff;
 }
 
-button {
-    width: 100%; /* Tombol memenuhi lebar layar */
+/* 🔹 Tombol Kirim */
+.komentar button {
+    width: 100%;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -67,7 +64,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.komentar button:hover {
     background-color: #0056b3;
 }
 
