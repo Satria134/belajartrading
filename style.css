@@ -40,7 +40,7 @@ header {
 /* 🔹 Widget To-Do List */
 .widget {
     background-color: #111;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
     width: 90%; /* Gunakan 90% dari lebar layar */
     max-width: 600px; /* Batas maksimal */
