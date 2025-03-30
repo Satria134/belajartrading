@@ -30,20 +30,22 @@ header {
     font-weight: bold;
 }
 
-/* 🔹 To-Do List mengikuti lebar layar */
+/* 🔹 Pusatkan To-Do List */
 .widgets {
     display: flex;
-    justify-content: center; /* Pusatkan widget */
+    justify-content: center; /* Pusatkan secara horizontal */
     margin-top: 20px;
 }
 
+/* 🔹 Widget To-Do List */
 .widget {
     background-color: #111;
     padding: 25px;
     border-radius: 10px;
-    width: 100%; /* Mengisi lebar layar */
-    max-width: 600px; /* Batas maksimal agar tidak terlalu besar di layar lebar */
+    width: 90%; /* Gunakan 90% dari lebar layar */
+    max-width: 600px; /* Batas maksimal */
     box-shadow: 0px 0px 10px #00eaff;
+    text-align: center; /* Agar teks dan elemen lainnya sejajar */
 }
 
 /* 🔹 Responsif: Sesuaikan ukuran input dan tombol */
@@ -94,17 +96,16 @@ button:hover {
     border-radius: 10px;
 }
 
-/* 🔹 Responsif: Di layar HP, widget menjadi satu kolom dengan jarak lebih besar */
+/* 🔹 Responsif: Center di HP */
 @media screen and (max-width: 768px) {
     .widgets {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Pusatkan semua elemen */
     }
 
     .widget {
-        width: 90%; /* Lebih pas untuk layar kecil */
-        max-width: 400px; /* Membatasi agar tidak terlalu lebar */
-        margin-bottom: 25px; /* Tambahkan jarak antar widget */
-        padding: 25px; /* Sedikit lebih besar agar lebih lega */
+        width: 100%; /* Gunakan seluruh lebar layar di HP */
+        max-width: 400px; /* Batas maksimal agar tetap enak dilihat */
     }
 }
