@@ -30,33 +30,54 @@ header {
     font-weight: bold;
 }
 
-/* 🔹 Styling Komentar */
+/* 🔹 Styling Section Komentar */
 .komentar {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 25px;
     border-radius: 10px;
     width: 90%;
     max-width: 600px;
-    margin: 30px auto; /* Tengah di layar */
-    text-align: center;
+    margin: 30px auto;
+    text-align: left; /* Agar teks sejajar kiri */
     box-shadow: 0px 0px 10px #00eaff;
 }
 
-/* 🔹 Input & Textarea */
-.komentar input, .komentar textarea {
+/* 🔹 Form Group (Nama & Komentar) */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #00eaff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid #00eaff;
     border-radius: 5px;
     background: #222;
     color: #00eaff;
 }
 
-/* 🔹 Tombol Kirim */
-.komentar button {
-    width: 100%;
-    padding: 10px;
+/* 🔹 Textarea lebih besar */
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* 🔹 Tombol Kirim di Kanan */
+.form-submit {
+    display: flex;
+    justify-content: flex-end; /* Geser tombol ke kanan */
+}
+
+.form-submit button {
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
@@ -64,8 +85,18 @@ header {
     border-radius: 5px;
 }
 
-.komentar button:hover {
+.form-submit button:hover {
     background-color: #0056b3;
+}
+
+.komentar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00eaff;
 }
 
 /* 🔹 Responsif Materi */
