@@ -38,25 +38,31 @@ header {
     width: 90%;
     max-width: 600px;
     margin: 30px auto;
-    text-align: left; /* Agar teks sejajar kiri */
+    text-align: center; /* Pusatkan teks */
     box-shadow: 0px 0px 10px #00eaff;
 }
 
 /* 🔹 Form Group (Nama & Komentar) */
 .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen */
     margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
     font-weight: bold;
     color: #00eaff;
     margin-bottom: 5px;
+    width: 100%;
+    text-align: left; /* Agar label tetap sejajar kiri */
+    max-width: 500px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
+    max-width: 500px; /* Batasi agar tetap terlihat rapi */
     padding: 10px;
     border: 1px solid #00eaff;
     border-radius: 5px;
@@ -70,10 +76,10 @@ header {
     resize: vertical;
 }
 
-/* 🔹 Tombol Kirim di Kanan */
+/* 🔹 Tombol Kirim Center */
 .form-submit {
     display: flex;
-    justify-content: flex-end; /* Geser tombol ke kanan */
+    justify-content: center; /* Pusatkan tombol */
 }
 
 .form-submit button {
@@ -88,6 +94,21 @@ header {
 .form-submit button:hover {
     background-color: #0056b3;
 }
+
+/* 🔹 Responsif: Center di HP */
+@media screen and (max-width: 768px) {
+    .komentar {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        max-width: 100%; /* Sesuaikan dengan layar HP */
+    }
+}
+
 
 .komentar {
     width: 90%;
