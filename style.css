@@ -30,21 +30,21 @@ header {
     font-weight: bold;
 }
 
-/* 🔹 Responsive Widgets */
+/* 🔹 Styling umum */
 .widgets {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 20px; /* Menambahkan jarak antar widget */
     margin-top: 20px;
 }
 
+/* 🔹 Widget */
 .widget {
     background-color: #111;
     padding: 20px;
     border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
+    width: 48%; /* Membagi 2 bagian untuk layar besar */
     box-shadow: 0px 0px 10px #00eaff;
 }
 
@@ -88,19 +88,20 @@ button:hover {
     border-radius: 10px;
 }
 
-/* 🔹 Media Query untuk HP */
+/* 🔹 Responsif: Di layar HP, widget menjadi satu kolom */
 @media screen and (max-width: 768px) {
-    .dashboard, .materi {
-        width: 95%;
-        padding: 15px;
-    }
-
-    header {
-        padding: 15px;
+    .widgets {
+        flex-direction: column;
+        align-items: center;
     }
 
     .widget {
-        width: 100%;
+        width: 90%; /* Agar lebih pas di layar kecil */
+    }
+}
+
+    header {
+        padding: 15px;
     }
 
     button {
