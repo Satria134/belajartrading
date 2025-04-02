@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,21 +48,36 @@
         }
         updateClock();
 
-        function addTask() {
-            const input = document.getElementById("todo-input");
-            if (input.value.trim() !== "") {
-                const li = document.createElement("li");
-                li.textContent = input.value;
-                document.getElementById("todo-list").appendChild(li);
-                input.value = "";
+        function submitComment() {
+            const nama = document.getElementById("nama").value.trim();
+            const pesan = document.getElementById("pesan").value.trim();
+            if (nama === "" || pesan === "") {
+                alert("Nama dan komentar tidak boleh kosong!");
+                return;
             }
+
+            // Buat elemen baru untuk komentar
+            const commentSection = document.getElementById("comment-section");
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+
+            commentDiv.innerHTML = `
+                <strong>${nama}</strong>
+                <p>${pesan}</p>
+            `;
+
+            // Tambahkan ke daftar komentar
+            commentSection.appendChild(commentDiv);
+
+            // Kosongkan input setelah dikirim
+            document.getElementById("nama").value = "";
+            document.getElementById("pesan").value = "";
         }
     </script>
-    
-<!-- Form Komentar -->
-<section class="komentar">
-    <h2>Komentar</h2>
-    <form action="mailto:satriaadjie902@gmail.com" method="POST" enctype="text/plain">
+
+    <!-- Form Komentar -->
+    <section class="komentar">
+        <h2>Komentar</h2>
         <div class="form-group">
             <label for="nama">Nama</label>
             <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
@@ -72,10 +87,12 @@
             <textarea id="pesan" name="pesan" placeholder="Tulis komentar Anda..." required></textarea>
         </div>
         <div class="form-submit">
-            <button type="submit">Kirim</button>
+            <button type="button" onclick="submitComment()">Kirim</button>
         </div>
-    </form>
-</section>
+
+        <!-- Tempat Komentar Ditampilkan -->
+        <div id="comment-section"></div>
+    </section>
 
 </body>
 </html>
