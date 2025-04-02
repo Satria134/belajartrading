@@ -38,7 +38,7 @@ header {
     width: 90%;
     max-width: 600px;
     margin: 30px auto;
-    text-align: center; /* Pusatkan teks */
+    text-align: center;
     box-shadow: 0px 0px 10px #00eaff;
 }
 
@@ -95,69 +95,27 @@ header {
     background-color: #0056b3;
 }
 
-/* 🔹 Responsif: Center di HP */
-@media screen and (max-width: 768px) {
-    .komentar {
-        width: 95%;
-        max-width: 500px;
-    }
-
-    .form-group label,
-    .form-group input,
-    .form-group textarea {
-        max-width: 100%; /* Sesuaikan dengan layar HP */
-    }
-}
-
-.komentar {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #00eaff;
-
-    /* 🔹 Centering isi komentar */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Pusatkan isi secara horizontal */
-    text-align: center;  /* Pusatkan teks */
-}
-
-/* ðŸ”¹ Responsive Widgets */
-.widgets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* 🔹 Styling Komentar yang Ditampilkan */
+#comment-section {
     margin-top: 20px;
+    text-align: left;
 }
 
-.widget {
-    background-color: #111;
-    padding: 20px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0px 0px 10px #00eaff;
-}
-
-button {
-    background-color: #00eaff;
-    color: black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.comment {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-top: 10px;
     border-radius: 5px;
     width: 100%;
-    max-width: 200px;
+    max-width: 500px;
+    box-shadow: 0px 0px 5px #00eaff;
 }
 
-button:hover {
-    background-color: #007799;
+.comment strong {
+    color: #00eaff;
+    display: block;
+    margin-bottom: 5px;
 }
-
 
 /* 🔹 Responsif Materi */
 .materi-content {
@@ -186,14 +144,14 @@ button:hover {
 
 /* 🔹 Responsif: Center di HP */
 @media screen and (max-width: 768px) {
-    .widgets {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Pusatkan semua elemen */
+    .komentar {
+        width: 95%;
+        max-width: 500px;
     }
 
-    .widget {
-        width: 100%; /* Gunakan seluruh lebar layar di HP */
-        max-width: 400px; /* Batas maksimal agar tetap enak dilihat */
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        max-width: 100%; /* Sesuaikan dengan layar HP */
     }
 }
