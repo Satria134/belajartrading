@@ -142,12 +142,12 @@ header {
     border-radius: 10px;
 }
 
-.button {
+.materi-file button {
     display: flex;
     justify-content: center; /* Pusatkan tombol */
 }
 
-.button {
+.materi-file button {
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
