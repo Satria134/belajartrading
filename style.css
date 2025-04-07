@@ -142,6 +142,24 @@ header {
     border-radius: 10px;
 }
 
+.button {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.materi-file button:hover {
+    background-color: #0056b3;
+}
+
 /* 🔹 Responsif: Center di HP */
 @media screen and (max-width: 768px) {
     .komentar {
