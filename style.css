@@ -1,175 +1,168 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #00eaff;
-    text-align: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-.dashboard, .materi {
+.dashboard, .materi, .komentar {
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #00eaff;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
 }
 
 header {
     padding: 20px;
-    background: linear-gradient(45deg, #001f3f, #005f7f);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #00eaff;
+    background: linear-gradient(45deg, #001f3f, #004f6e);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
 }
 
 #clock {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-/* 🔹 Styling Section Komentar */
-.komentar {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 25px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    margin: 30px auto;
-    text-align: center;
-    box-shadow: 0px 0px 10px #00eaff;
+/* === Komentar Section === */
+.komentar h2 {
+    margin-bottom: 20px;
 }
 
-/* 🔹 Form Group (Nama & Komentar) */
 .form-group {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Pusatkan elemen */
+    align-items: center;
     margin-bottom: 15px;
 }
 
 .form-group label {
-    font-weight: bold;
+    font-weight: 600;
     color: #00eaff;
     margin-bottom: 5px;
     width: 100%;
-    text-align: left; /* Agar label tetap sejajar kiri */
     max-width: 500px;
+    text-align: left;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    max-width: 500px; /* Batasi agar tetap terlihat rapi */
+    max-width: 500px;
     padding: 10px;
+    background: #1a1a1a;
     border: 1px solid #00eaff;
-    border-radius: 5px;
-    background: #222;
+    border-radius: 8px;
     color: #00eaff;
 }
 
-/* 🔹 Textarea lebih besar */
-.form-group textarea {
+textarea {
     height: 100px;
     resize: vertical;
 }
 
-/* 🔹 Tombol Kirim Center */
 .form-submit {
-    display: flex;
-    justify-content: center; /* Pusatkan tombol */
+    margin-top: 10px;
 }
 
 .form-submit button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 25px;
+    background: #007bff;
     border: none;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 .form-submit button:hover {
-    background-color: #0056b3;
+    background: #0056b3;
 }
 
-/* 🔹 Styling Komentar yang Ditampilkan */
+/* === Komentar Ditampilkan === */
 #comment-section {
     margin-top: 20px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .comment {
-    background-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
     padding: 15px;
     margin-top: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0px 0px 5px #00eaff;
+    box-shadow: 0 0 5px rgba(0, 234, 255, 0.4);
 }
 
 .comment strong {
     color: #00eaff;
-    display: block;
     margin-bottom: 5px;
+    display: block;
 }
 
-/* 🔹 Responsif Materi */
+/* === Materi === */
 .materi-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-items: center;
     margin-top: 20px;
+    justify-items: center;
 }
 
 .materi-file {
-    background-color: #111;
+    background: #111;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #00eaff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
     text-align: center;
-    width: 100%;
     max-width: 300px;
+    width: 100%;
 }
 
 .materi-file img {
     width: 100%;
     max-width: 250px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.materi-file button {
-    display: flex;
-    justify-content: center; /* Pusatkan tombol */
-}
-
-.materi-file button {
+.materi-file a button {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background: #007bff;
+    color: #fff;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-.materi-file button:hover {
-    background-color: #0056b3;
+.materi-file a button:hover {
+    background: #0056b3;
 }
 
-/* 🔹 Responsif: Center di HP */
+/* === Responsive === */
 @media screen and (max-width: 768px) {
-    .komentar {
+    .komentar, .dashboard, .materi {
         width: 95%;
-        max-width: 500px;
     }
 
-    .form-group label,
     .form-group input,
     .form-group textarea {
-        max-width: 100%; /* Sesuaikan dengan layar HP */
+        max-width: 100%;
+    }
+
+    .materi-content {
+        grid-template-columns: 1fr;
     }
 }
