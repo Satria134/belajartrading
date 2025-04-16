@@ -164,6 +164,17 @@ textarea {
     background: #e55060;
 }
 
+.khusus {
+    font-size: 11px;
+    font-weight: bold;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 240, 245, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 105, 135, 0.4);
+
 /* === Responsive === */
 @media screen and (max-width: 768px) {
     .komentar, .dashboard, .materi {
