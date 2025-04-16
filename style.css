@@ -12,12 +12,11 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 30px auto;
-    padding: 30px 20px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.85);
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 0 4px 20px rgba(255, 105, 135, 0.3);
-}
-
+    
 header {
     padding: 25px;
     background: linear-gradient(90deg, #ff6f91, #ff9671);
