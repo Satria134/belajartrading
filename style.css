@@ -1,8 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('love-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #00eaff;
+    color: #ff6b81;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,27 +13,29 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(255, 240, 245, 0.85);
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+    box-shadow: 0 0 20px rgba(255, 105, 135, 0.4);
 }
 
 header {
     padding: 20px;
-    background: linear-gradient(45deg, #001f3f, #004f6e);
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 105, 135, 0.3);
 }
 
 #clock {
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+    color: #c0392b;
 }
 
 /* === Komentar Section === */
 .komentar h2 {
     margin-bottom: 20px;
+    color: #e84393;
 }
 
 .form-group {
@@ -45,7 +47,7 @@ header {
 
 .form-group label {
     font-weight: 600;
-    color: #00eaff;
+    color: #c0392b;
     margin-bottom: 5px;
     width: 100%;
     max-width: 500px;
@@ -57,10 +59,10 @@ header {
     width: 100%;
     max-width: 500px;
     padding: 10px;
-    background: #1a1a1a;
-    border: 1px solid #00eaff;
+    background: #fff0f5;
+    border: 1px solid #ff6b81;
     border-radius: 8px;
-    color: #00eaff;
+    color: #c0392b;
 }
 
 textarea {
@@ -74,7 +76,7 @@ textarea {
 
 .form-submit button {
     padding: 10px 25px;
-    background: #007bff;
+    background: #ff6b81;
     border: none;
     color: white;
     border-radius: 6px;
@@ -83,7 +85,7 @@ textarea {
 }
 
 .form-submit button:hover {
-    background: #0056b3;
+    background: #e55060;
 }
 
 /* === Komentar Ditampilkan === */
@@ -96,17 +98,17 @@ textarea {
 }
 
 .comment {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 192, 203, 0.2);
     padding: 15px;
     margin-top: 10px;
     border-radius: 8px;
     width: 100%;
     max-width: 500px;
-    box-shadow: 0 0 5px rgba(0, 234, 255, 0.4);
+    box-shadow: 0 0 5px rgba(255, 105, 135, 0.3);
 }
 
 .comment strong {
-    color: #00eaff;
+    color: #e84393;
     margin-bottom: 5px;
     display: block;
 }
@@ -121,10 +123,10 @@ textarea {
 }
 
 .materi-file {
-    background: #111;
+    background: #fff0f5;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 234, 255, 0.4);
+    box-shadow: 0 0 10px rgba(255, 105, 135, 0.3);
     text-align: center;
     max-width: 300px;
     width: 100%;
@@ -139,7 +141,7 @@ textarea {
 
 .materi-file a button {
     padding: 10px 20px;
-    background: #007bff;
+    background: #ff6b81;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -148,7 +150,7 @@ textarea {
 }
 
 .materi-file a button:hover {
-    background: #0056b3;
+    background: #e55060;
 }
 
 /* === Responsive === */
